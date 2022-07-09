@@ -7,6 +7,7 @@ public class TargetButton : MonoBehaviour {
     void Start() {
         GetComponent<Button>().onClick.AddListener(() => {
             GameObject.FindGameObjectWithTag("Canvas").GetComponent<PuzzleManager>().SetupNextPuzzle();
+            GetComponent<Button>().interactable = false;
         });
     }
 }

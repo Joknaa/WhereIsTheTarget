@@ -88,7 +88,6 @@ GameObject:
   - component: {fileID: 7127271772158385270}
   - component: {fileID: 7127271772158385271}
   - component: {fileID: 7127271772158385268}
-  - component: {fileID: 7127271772158385269}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -209,18 +208,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &7127271772158385269
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7127271772158385259}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8b35635ac1934317a8d51833139bad09, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &7385392390194270684
 GameObject:
   m_ObjectHideFlags: 0
@@ -286,10 +273,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Target Found !
+  m_text: Target Found
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 85257a2dfdc13604e982114e94d79ce3, type: 2}
+  m_sharedMaterial: {fileID: -6178630288992896424, guid: 85257a2dfdc13604e982114e94d79ce3, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

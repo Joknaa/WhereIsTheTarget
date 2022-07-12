@@ -1,6 +1,8 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Security.Cryptography;
+using SlapCook;
 using TMPro;
 using UnityEngine;
 
@@ -11,14 +13,16 @@ public class PuzzleManager : MonoBehaviour {
 
     private int puzzleIndex = 0;
     private SoundManager soundManager;
-    private bool newPuzzleIsLoaded = false;
     private GameObject currentPuzzle;
     private GameObject targetFoundInstance;
 
-    private void Start() {
-        // canvas = GameObject.FindGameObjectWithTag("Canvas");
-        currentPuzzle = Instantiate(puzzlePrefabs[puzzleIndex], canvas.transform);
-        soundManager = GameObject.FindObjectOfType<SoundManager>();
+  
+
+    public void StartPuzzles() { 
+        FindObjectOfType<Timer>().ResetTimer();
+        currentPuzzle = FindObjectOfType<UIController>().firstLevel;
+        // currentPuzzle = Instantiate(puzzlePrefabs[puzzleIndex], canvas.transform);
+        soundManager = FindObjectOfType<SoundManager>();
     }
 
 
@@ -30,13 +34,17 @@ public class PuzzleManager : MonoBehaviour {
     }
 
     public void LoadNextPuzzle() {
+
+        if (puzzleIndex == 0) currentPuzzle.SetActive(false);
+        else Destroy(currentPuzzle);
         
-        Destroy(currentPuzzle);
         Destroy(targetFoundInstance);
         puzzleIndex++;
         if (puzzleIndex >= puzzlePrefabs.Count) {
             puzzleIndex = puzzlePrefabs.Count - 1;
+            GameStateController.Instance.SetState(GameStateController.GameState.GameWon);
             print("GameWon !!");
+            return;
         }
 
         currentPuzzle = Instantiate(puzzlePrefabs[puzzleIndex], canvas.transform);

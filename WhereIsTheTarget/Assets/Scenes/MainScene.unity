@@ -779,6 +779,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   puzzlePrefabs:
   - {fileID: 5963196315107942517, guid: 1307905ff3d25e3438e8f559eb9a90cc, type: 3}
+  - {fileID: 5963196315107942517, guid: e1d03a668d224ca4891c877dfacea1d8, type: 3}
+  - {fileID: 5963196315107942517, guid: 588c0958377971e458bc07b7ee30d55d, type: 3}
+  - {fileID: 904003191889988181, guid: b7c3ba9f1bb8d0d479adf4ea6f89ea13, type: 3}
+  - {fileID: 6149861892598250136, guid: 2f9d4bae261503240ba2bcd94bc942d5, type: 3}
+  - {fileID: 2597945217093916441, guid: d870fa506018f3844855e80498070983, type: 3}
   - {fileID: 2207481332405545289, guid: 3d4fc36c41d32544c8a8144645933aba, type: 3}
   targetFoundPanel: {fileID: 7385392390837248554, guid: ad8f6d122ca32324f9306b6a7f5e1bc9, type: 3}
   canvas: {fileID: 1347405661}
@@ -1081,7 +1086,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 180.2, y: -21.4}
+  m_AnchoredPosition: {x: 180.2, y: -21.400024}
   m_SizeDelta: {x: 119.1, y: 80}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1837416517
@@ -1628,7 +1633,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -179.4, y: -21.4}
+  m_AnchoredPosition: {x: -179.4, y: -21.400024}
   m_SizeDelta: {x: 119.1, y: 80}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!1 &7661748355945140283
